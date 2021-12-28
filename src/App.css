@@ -1,5 +1,6 @@
 body {
   background: #000000;
+  color: white;
 }
 @keyframes fadein {
   from {
@@ -8,57 +9,4 @@ body {
   to {
     opacity: 1;
   }
-}
-.nav-bar {
-  height: 100px;
-  position: fixed;
-  top: 0;
-}
-.nav-bar div {
-  width: 15%;
-  text-align: center;
-  font-size: 32px;
-}
-.selected a {
-  border-bottom: 2px solid white;
-}
-.navbar-item {
-  transition: transform 0.4s;
-}
-.navbar-item:hover {
-  transform: translate(0, -10px);
-}
-.nav-bar a {
-  text-decoration: none;
-  color: white;
-}
-#home {
-  color: white;
-  width: 100%;
-  height: 700px;
-}
-#home::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 700px;
-  background-image: url(home-background.png);
-  z-index: -10;
-  filter: brightness(50%);
-}
-#headshot {
-  max-width: 300px;
-}
-#name,
-#title,
-#headshot {
-  opacity: 0;
-  animation: fadein 1.5s;
-  animation-fill-mode: forwards;
-}
-#title {
-  animation-delay: 0.3s;
-}
-#headshot {
-  animation-delay: 0.6s;
 }

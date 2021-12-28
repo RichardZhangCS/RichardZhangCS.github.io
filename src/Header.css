@@ -1,0 +1,27 @@
+.nav-bar {
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+.nav-bar div {
+  width: 15%;
+  text-align: center;
+  font-size: 32px;
+}
+.selected a {
+  border-bottom: 2px solid white;
+}
+.navbar-item {
+  transition: transform 0.4s;
+}
+.navbar-item:hover {
+  transform: translate(0, -10px);
+}
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+.section-title {
+  font-size: 80px;
+}

@@ -1,0 +1,36 @@
+#projects {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  position: relative;
+  height: fit-content;
+}
+#projects::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  background-clip: border-box;
+  background-image: url("projects_background.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -10;
+  filter: brightness(50%);
+}
+.featured img {
+  max-width: 90%;
+  height: auto;
+}
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+.project-button {
+  cursor: pointer;
+  transition: background-color 0.5s, text 0.5s;
+  height: 100px;
+}
+.project-button:hover {
+  background-color: white;
+  color: black;
+}
