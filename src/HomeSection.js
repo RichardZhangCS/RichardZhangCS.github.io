@@ -1,10 +1,12 @@
 import headShot from "./headshot.jpg";
 import "./HomeSection.css";
 import React from "react";
+import ParticleBackground from "./Particles";
 export default React.forwardRef(function HomeSection(props, ref) {
   return (
     <section ref={ref} id="home">
       {props.children}
+      <ParticleBackground style={{ width: "100%" }}></ParticleBackground>
       <div className="d-flex align-items-center h-100 justify-content-center flex-column flex-md-row">
         <div className="introduction ps-3 w-50 text-center text-md-end">
           <h1 className="m-auto section-title" id="name">
