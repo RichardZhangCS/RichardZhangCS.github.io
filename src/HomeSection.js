@@ -1,10 +1,12 @@
 import headShot from "./headshot.jpg";
 import "./HomeSection.css";
-export default function HomeSection() {
+import React from "react";
+export default React.forwardRef(function HomeSection(props, ref) {
   return (
-    <section id="home">
-      <div className="d-flex align-items-center h-100 justify-content-center">
-        <div className="introduction ps-3 w-50 text-end">
+    <section ref={ref} id="home">
+      {props.children}
+      <div className="d-flex align-items-center h-100 justify-content-center flex-column flex-md-row">
+        <div className="introduction ps-3 w-50 text-center text-md-end">
           <h1 className="m-auto section-title" id="name">
             RICHARD ZHANG
           </h1>
@@ -42,10 +44,10 @@ export default function HomeSection() {
             </a>
           </div>
         </div>
-        <div className="w-50 h-100 d-flex align-items-center justify-content-center">
+        <div className="w-50 h-100 d-flex align-items-center justify-content-center headshot-container">
           <img src={headShot} alt="Richard Zhang" id="headshot" />
         </div>
       </div>
     </section>
   );
-}
+});

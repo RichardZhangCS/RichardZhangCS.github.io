@@ -3,7 +3,8 @@ import pdfFile from "./assets/instagram_voter.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-export default function ProjectsSection() {
+import React from "react";
+export default React.forwardRef(function ProjectsSection(props, ref) {
   useEffect(() => {
     Aos.init({ duration: 500, once: true });
   }, []);
@@ -42,11 +43,26 @@ export default function ProjectsSection() {
     ),
   ];
   return (
-    <section id="projects">
-      <div className="container d-flex">
-        <div className="w-50">
-          <h2 data-aos="fade-right">Full Stack Web Applications</h2>
-          <div data-aos="fade-right" className="project-container text-center">
+    <section ref={ref} id="projects">
+      {props.children}
+      <div className="container d-flex flex-md-row-reverse flex-column">
+        <div
+          data-aos="fade-left"
+          className="w-50 d-inline-block align-self-center project-title-container"
+        >
+          <h1 className="section-title me-md-3 text-start text-md-end">
+            Projects
+          </h1>
+        </div>
+        <div className="w-50 all-project-container text-center text-md-start">
+          <h2 data-aos="fade-right" data-aos-delay="50">
+            Full Stack Web Applications
+          </h2>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="65"
+            className="project-container text-center"
+          >
             {fullStackWebApps.map((project, index) => (
               <div
                 className="p-3 border project-button"
@@ -60,10 +76,14 @@ export default function ProjectsSection() {
               </div>
             ))}
           </div>
-          <h2 data-aos="fade-right" className="mt-3">
+          <h2 data-aos="fade-right" data-aos-delay="80" className="mt-3">
             Research Projects
           </h2>
-          <div data-aos="fade-right" className="project-container text-center">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="95"
+            className="project-container text-center"
+          >
             {research.map((project, index) => (
               <div
                 className="p-3 border project-button"
@@ -77,10 +97,14 @@ export default function ProjectsSection() {
               </div>
             ))}
           </div>
-          <h2 data-aos="fade-right" className="mt-3">
+          <h2 data-aos="fade-right" data-aos-delay="110" className="mt-3">
             Video Games
           </h2>
-          <div data-aos="fade-right" className="project-container text-center">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="125"
+            className="project-container text-center"
+          >
             {videoGames.map((project, index) => (
               <div
                 className="p-3 border project-button"
@@ -95,13 +119,7 @@ export default function ProjectsSection() {
             ))}
           </div>
         </div>
-        <div
-          data-aos="fade-left"
-          className="w-50 d-inline-block align-self-center"
-        >
-          <h1 className="section-title me-3 text-end">Projects</h1>
-        </div>
       </div>
     </section>
   );
-}
+});

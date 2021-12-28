@@ -1,16 +1,33 @@
 .nav-bar {
   height: 100px;
   position: fixed;
+  width: 100%;
   top: 0;
   z-index: 3;
 }
+@media screen and (max-width: 576px) {
+  .navbar-item:hover {
+    transform: none !important;
+  }
+  .navbar-item {
+    width: 100% !important;
+  }
+  .nav-bar {
+    height: 150px;
+    width: 100% !important;
+  }
+}
 .nav-bar div {
-  width: 15%;
+  width: 33%;
   text-align: center;
   font-size: 32px;
 }
+.nav-bar a {
+  transition: border-bottom 0.25s;
+  border-bottom: 5px solid transparent;
+}
 .selected a {
-  border-bottom: 2px solid white;
+  border-bottom: 5px solid white;
 }
 .navbar-item {
   transition: transform 0.4s;

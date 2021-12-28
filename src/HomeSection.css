@@ -46,3 +46,19 @@
 .fa:hover {
   background: rgba(255, 255, 255, 0.25);
 }
+@media screen and (max-width: 768px) {
+  #home {
+    padding-top: 150px;
+    height: 1050px !important;
+  }
+  #home::before {
+    height: 1050px;
+  }
+  .introduction {
+    width: 100% !important;
+    padding-left: 0 !important;
+  }
+  .headshot-container {
+    width: 100% !important;
+  }
+}

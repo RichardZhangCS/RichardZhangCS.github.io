@@ -3,20 +3,25 @@ import resume from "./assets/resume.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-export default function AboutSection() {
+import React from "react";
+export default React.forwardRef(function AboutSection(props, ref) {
   useEffect(() => {
     Aos.init({ duration: 500, once: true });
   }, []);
   return (
-    <section id="about">
-      <div className="container d-flex">
+    <section ref={ref} id="about">
+      {props.children}
+      <div className="container d-flex flex-md-row flex-column">
         <div
           data-aos="fade-right"
-          className="w-50 d-inline-block align-self-center"
+          className="w-50 d-inline-block align-self-center about-title-container"
         >
           <h1 className="section-title me-3 text-end">About</h1>
         </div>
-        <div data-aos="fade-left" className="w-50 ps-3">
+        <div
+          data-aos="fade-left"
+          className="w-50 ps-3 about-description-container"
+        >
           <p className="lead">
             Hello! I am currently an aspiring full-stack software developer
             hoping to create a career full of impact. Every day, I strive to
@@ -39,4 +44,4 @@ export default function AboutSection() {
       </div>
     </section>
   );
-}
+});

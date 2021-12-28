@@ -1,6 +1,17 @@
 #about {
   padding-top: 100px;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
   position: relative;
-  height: 800px;
+  height: fit-content;
+}
+@media screen and (max-width: 768px) {
+  .about-title-container {
+    width: 100% !important;
+  }
+  .about-description-container {
+    width: 100% !important;
+  }
+  #about {
+    padding-top: 150px;
+  }
 }

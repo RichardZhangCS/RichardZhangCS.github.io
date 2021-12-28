@@ -34,3 +34,14 @@
   background-color: white;
   color: black;
 }
+@media screen and (max-width: 768px) {
+  #projects {
+    padding-top: 150px;
+  }
+  .project-title-container {
+    width: 100% !important;
+  }
+  .all-project-container {
+    width: 100% !important;
+  }
+}
