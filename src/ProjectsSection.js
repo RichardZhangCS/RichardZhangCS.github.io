@@ -1,5 +1,5 @@
 import "./ProjectsSection.css";
-import pdfFile from "./instagram_voter.pdf";
+import pdfFile from "./assets/instagram_voter.pdf";
 export default function ProjectsSection() {
   const createProjectObj = (title, link, current) => {
     return { title, link, current };

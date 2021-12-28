@@ -10,3 +10,7 @@ body {
     opacity: 1;
   }
 }
+.download-link {
+  text-decoration: none;
+  font-size: 24px;
+}

@@ -17,16 +17,20 @@
 }
 #name,
 #title,
-#headshot {
+#headshot,
+.icon-container {
   opacity: 0;
   animation: fadein 1.5s;
   animation-fill-mode: forwards;
 }
 #title {
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 #headshot {
   animation-delay: 0.6s;
+}
+.icon-container {
+  animation-delay: 0.4s;
 }
 .fa {
   font-size: 30px;

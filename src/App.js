@@ -1,3 +1,4 @@
+import AboutSection from "./AboutSection";
 import "./App.css";
 import Header from "./Header";
 import HomeSection from "./HomeSection";
@@ -9,6 +10,7 @@ function App() {
       <Header></Header>
       <HomeSection></HomeSection>
       <ProjectsSection></ProjectsSection>
+      <AboutSection></AboutSection>
     </>
   );
 }
