@@ -14,28 +14,32 @@ export default function HomeSection() {
           <div className="icon-container">
             <a
               href="https://www.linkedin.com/in/richardzhang-rz/"
-              className="fa fa-linkedin text-white"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
+            >
+              <i className="fa fa-linkedin text-white"></i>
+            </a>
             <a
               href="https://github.com/RichardZhangCS/"
-              className="fa fa-github text-white"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
+            >
+              <i className="fa fa-github text-white"></i>
+            </a>
             <a
               href="tel:832-359-4651"
-              className="fa fa-mobile text-white"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
+            >
+              <i className="fa fa-mobile text-white"></i>
+            </a>
             <a
               href="mailto: richardzhang1303@gmail.com"
-              className="fa fa-envelope text-white"
               target="_blank"
               rel="noopener noreferrer"
-            ></a>
+            >
+              <i className="fa fa-envelope text-white"></i>
+            </a>
           </div>
         </div>
         <div className="w-50 h-100 d-flex align-items-center justify-content-center">

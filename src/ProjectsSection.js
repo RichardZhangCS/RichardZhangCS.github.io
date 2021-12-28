@@ -1,6 +1,12 @@
 import "./ProjectsSection.css";
 import pdfFile from "./assets/instagram_voter.pdf";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 export default function ProjectsSection() {
+  useEffect(() => {
+    Aos.init({ duration: 500, once: true });
+  }, []);
   const createProjectObj = (title, link, current) => {
     return { title, link, current };
   };
@@ -39,8 +45,8 @@ export default function ProjectsSection() {
     <section id="projects">
       <div className="container d-flex">
         <div className="w-50">
-          <h2>Full Stack Web Applications</h2>
-          <div className="project-container text-center">
+          <h2 data-aos="fade-right">Full Stack Web Applications</h2>
+          <div data-aos="fade-right" className="project-container text-center">
             {fullStackWebApps.map((project, index) => (
               <div
                 className="p-3 border project-button"
@@ -54,8 +60,10 @@ export default function ProjectsSection() {
               </div>
             ))}
           </div>
-          <h2 className="mt-3">Research Projects</h2>
-          <div className="project-container text-center">
+          <h2 data-aos="fade-right" className="mt-3">
+            Research Projects
+          </h2>
+          <div data-aos="fade-right" className="project-container text-center">
             {research.map((project, index) => (
               <div
                 className="p-3 border project-button"
@@ -69,8 +77,10 @@ export default function ProjectsSection() {
               </div>
             ))}
           </div>
-          <h2 className="mt-3">Video Games</h2>
-          <div className="project-container text-center">
+          <h2 data-aos="fade-right" className="mt-3">
+            Video Games
+          </h2>
+          <div data-aos="fade-right" className="project-container text-center">
             {videoGames.map((project, index) => (
               <div
                 className="p-3 border project-button"
@@ -85,7 +95,10 @@ export default function ProjectsSection() {
             ))}
           </div>
         </div>
-        <div className="w-50 d-inline-block align-self-center">
+        <div
+          data-aos="fade-left"
+          className="w-50 d-inline-block align-self-center"
+        >
           <h1 className="section-title me-3 text-end">Projects</h1>
         </div>
       </div>
