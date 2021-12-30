@@ -1,3 +1,16 @@
+# RichardZhangCS.github.io
+This is the code for my personal website. The front-end was built with React and Bootstrap.
+
+You can clone it by running this command:
+```
+git clone https://github.com/RichardZhangCS/RichardZhangCS.github.io.git
+```
+After cloning, run the following command to install dependences:
+```
+npm install
+```
+
+Below are Create React App's instructions to run the application:
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
