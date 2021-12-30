@@ -1,11 +1,13 @@
 .nav-bar {
   height: 100px;
   position: fixed;
-  width: 100%;
+  width: 100vw !important;
   top: 0;
   z-index: 3;
+  background-color: transparent;
+  -webkit-backface-visibility: hidden;
 }
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .navbar-item:hover {
     transform: none !important;
   }
@@ -13,11 +15,12 @@
     width: 100% !important;
   }
   .nav-bar {
-    height: fit-content;
-    width: 100% !important;
-    background: black !important;
+    height: auto;
+    left: 0;
+    background-color: black !important;
   }
 }
+
 .nav-bar .navbar-item {
   width: 33%;
   text-align: center;

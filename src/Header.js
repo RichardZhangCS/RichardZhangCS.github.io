@@ -6,7 +6,7 @@ export default function Header({ sectionUnderline }) {
     <Navbar expand="sm" className="transparent navbar-dark nav-bar w-100 p-0">
       <Container
         fluid
-        className="h-100 align-items-md-center align-items-start pt-md-0 pt-2"
+        className="h-100 align-items-md-center align-items-start pt-md-0 py-2"
       >
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

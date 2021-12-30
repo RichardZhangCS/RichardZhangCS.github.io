@@ -28,6 +28,11 @@ export default React.forwardRef(function ProjectsSection(props, ref) {
       "https://shielded-brook-73762.herokuapp.com/catalog",
       false
     ),
+    createProjectObj(
+      "Project Task Manager App",
+      "https://richardzhangcs.github.io/project-manager-react/",
+      false
+    ),
   ];
   const research = [
     createProjectObj(

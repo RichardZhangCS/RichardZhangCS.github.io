@@ -49,7 +49,7 @@ const ParticleBackground = React.memo(() => {
             color: "rgb(136, 200, 255)",
             distance: 150,
             enable: true,
-            opacity: 0.5,
+            opacity: 1,
             width: 1,
           },
           collisions: {
@@ -66,9 +66,9 @@ const ParticleBackground = React.memo(() => {
           number: {
             density: {
               enable: true,
-              area: 800,
+              area: 1200,
             },
-            value: 80,
+            value: 60,
           },
           opacity: {
             value: 0.5,
