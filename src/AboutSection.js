@@ -23,21 +23,16 @@ export default React.forwardRef(function AboutSection(props, ref) {
           className="w-50 ps-3 about-description-container"
         >
           <p className="lead">
-            Hello! I am currently an aspiring full-stack software developer
-            hoping to create a career full of impact. Every day, I strive to
-            fill any personal gap in web development knowledge, moving towards a
-            strong mastery of both the front-end and back-end. Through my
-            passion for software development, I hope to invigorate positive
-            change for both my local community and for the globe.
+          Hello! I am a first-year computer science major at the Georgia Institute of Technology. 
+          I plan to specialize in Intelligence and Information Internetworks. I have interests in 
+          Web Development, Data Science, Data Engineering, and Software Engineering.
           </p>
-          <p className="lead">
-            Being both a Georgia Tech CS student and a member of the Global
-            Leadership LLC, I plan to unite my software skills and desire to
-            solve the world's greatest challenges. Many of those suffering from
-            the biggest problems are left without a voice, so I hope that my
-            developed software and technologies would provide such a voice.
-          </p>
-          <a href={resume} download className="download-link">
+          <a
+            href={resume}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="download-link"
+          >
             My resume (pdf 88kb)
           </a>
         </div>

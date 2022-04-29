@@ -11,28 +11,30 @@ export default React.forwardRef(function ProjectsSection(props, ref) {
   const createProjectObj = (title, link, current) => {
     return { title, link, current };
   };
+  const dataRelatedProjects = [
+    createProjectObj(
+      "Chinese Numbers Classifier",
+      "https://colab.research.google.com/drive/1musHO2MxJauhDpSBT4cKsXmhNp7VuuPO?usp=sharing",
+      false
+    ),
+    createProjectObj(
+      "ITS: Recommendations",
+      "recommender.html",
+      false
+    )
+  ];
   const fullStackWebApps = [
     createProjectObj(
       "Learn Bundle",
       "https://github.com/RichardZhangCS/learn-bundle",
-      true
+      false
     ),
     createProjectObj(
       "Data Converter",
       "https://data-converter.vercel.app/",
       false
     ),
-    createProjectObj("Rewardr", "https://devpost.com/software/rewardr", false),
-    createProjectObj(
-      "Local Library",
-      "https://shielded-brook-73762.herokuapp.com/catalog",
-      false
-    ),
-    createProjectObj(
-      "Project Task Manager App",
-      "https://richardzhangcs.github.io/project-manager-react/",
-      false
-    ),
+    createProjectObj("Rewardr", "https://devpost.com/software/rewardr", false)
   ];
   const research = [
     createProjectObj(
@@ -61,6 +63,27 @@ export default React.forwardRef(function ProjectsSection(props, ref) {
         </div>
         <div className="w-50 all-project-container text-center text-md-start">
           <h2 data-aos="fade-right" data-aos-delay="50">
+            Data Related Projects
+          </h2>
+          <div
+            data-aos="fade-right"
+            data-aos-delay="65"
+            className="project-container text-center"
+          >
+            {dataRelatedProjects.map((project, index) => (
+              <div
+                className="p-3 border project-button"
+                onClick={() => {
+                  window.open(project.link, "_blank");
+                }}
+                key={index}
+              >
+                <h3 className="">{project.title}</h3>
+                {project.current && <p>Work in Progress</p>}
+              </div>
+            ))}
+          </div>
+          <h2 data-aos="fade-right" data-aos-delay="50" className="mt-3">
             Full Stack Web Applications
           </h2>
           <div

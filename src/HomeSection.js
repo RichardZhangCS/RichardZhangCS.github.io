@@ -13,7 +13,7 @@ export default React.forwardRef(function HomeSection(props, ref) {
             RICHARD ZHANG
           </h1>
           <p className="h2 ps-1" id="title">
-            {"CS Student & Full Stack Developer"}
+            {"CS Student at Georgia Tech"}
           </p>
           <div className="icon-container">
             <a
