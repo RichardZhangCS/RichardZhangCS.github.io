@@ -24,8 +24,8 @@ export default React.forwardRef(function AboutSection(props, ref) {
         >
           <p className="lead">
           Hello! I am a first-year computer science major at the Georgia Institute of Technology. 
-          I plan to specialize in Intelligence and Information Internetworks. I have interests in 
-          Web Development, Data Science, Data Engineering, and Software Engineering.
+          I plan to specialize in Intelligence and Information Internetworks. I have interests in Data Science,
+          Web Development, Data Engineering, and Software Engineering.
           </p>
           <a
             href={resume}
