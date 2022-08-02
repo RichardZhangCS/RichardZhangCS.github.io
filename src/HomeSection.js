@@ -24,7 +24,7 @@ export default React.forwardRef(function HomeSection(props, ref) {
               <i className="fa fa-linkedin text-white"></i>
             </a>
             <a
-              href="https://github.com/RichardZhangCS/"
+              href="https://github.com/RichardZhangRZ/"
               target="_blank"
               rel="noopener noreferrer"
             >

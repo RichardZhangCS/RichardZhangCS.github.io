@@ -1,5 +1,6 @@
 import "./ProjectsSection.css";
-import pdfFile from "./assets/instagram_voter.pdf";
+import instagramPdfFile from "./assets/instagram_voter.pdf";
+import vrPdfFile from "./assets/vr_research_paper.pdf";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -39,9 +40,9 @@ export default React.forwardRef(function ProjectsSection(props, ref) {
   const research = [
     createProjectObj(
       "VR Veteran Mental Health Education",
-      "https://mymysteryprojects.com/assets/files/SDG4.pdf"
+      vrPdfFile
     ),
-    createProjectObj("Instagram and Voter Mobilization", pdfFile),
+    createProjectObj("Instagram and Voter Mobilization", instagramPdfFile),
   ];
   const videoGames = [
     createProjectObj(
@@ -70,13 +71,13 @@ export default React.forwardRef(function ProjectsSection(props, ref) {
             data-aos-delay="65"
             className="project-container text-center"
           >
-            {dataRelatedProjects.map((project, index) => (
+            {dataRelatedProjects.map((project) => (
               <div
                 className="p-3 border project-button"
                 onClick={() => {
                   window.open(project.link, "_blank");
                 }}
-                key={index}
+                key={project.title}
               >
                 <h3 className="">{project.title}</h3>
                 {project.current && <p>Work in Progress</p>}
@@ -91,13 +92,13 @@ export default React.forwardRef(function ProjectsSection(props, ref) {
             data-aos-delay="65"
             className="project-container text-center"
           >
-            {fullStackWebApps.map((project, index) => (
+            {fullStackWebApps.map((project) => (
               <div
                 className="p-3 border project-button"
                 onClick={() => {
                   window.open(project.link, "_blank");
                 }}
-                key={index}
+                key={project.title}
               >
                 <h3 className="">{project.title}</h3>
                 {project.current && <p>Work in Progress</p>}
@@ -112,13 +113,13 @@ export default React.forwardRef(function ProjectsSection(props, ref) {
             data-aos-delay="95"
             className="project-container text-center"
           >
-            {research.map((project, index) => (
+            {research.map((project) => (
               <div
                 className="p-3 border project-button"
                 onClick={() => {
                   window.open(project.link, "_blank");
                 }}
-                key={index}
+                key={project.title}
               >
                 <h3 className="">{project.title}</h3>
                 {project.current && <p>Work in Progress</p>}
@@ -133,13 +134,13 @@ export default React.forwardRef(function ProjectsSection(props, ref) {
             data-aos-delay="125"
             className="project-container text-center"
           >
-            {videoGames.map((project, index) => (
+            {videoGames.map((project) => (
               <div
                 className="p-3 border project-button"
                 onClick={() => {
                   window.open(project.link, "_blank");
                 }}
-                key={index}
+                key={project.title}
               >
                 <h3 className="">{project.title}</h3>
                 {project.current && <p>Work in Progress</p>}
